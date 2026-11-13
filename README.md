@@ -1,258 +1,155 @@
-# Data Cleaning & Analysis
+# Data Cleaning & Analysis Portfolio
 
-A practical repository for learning and applying **data cleaning, preprocessing, exploration, and analysis** using Python and the Pandas ecosystem.
+A collection of practical data cleaning and analysis projects using Python, Pandas, and other data tools.
 
-The repository is designed to grow over time as a personal data engineering and analytics workspace, starting with data cleaning and gradually expanding into more advanced data workflows.
+This repository showcases hands-on work with structured datasets, covering data inspection, quality assessment, cleaning, transformation, and exploratory data analysis (EDA).
 
----
-
-## 🎯 Purpose
-
-The main goal of this repository is to build strong practical skills in working with real-world datasets.
-
-The focus is on understanding how to:
-
-* Inspect and understand datasets
-* Identify data quality issues
-* Clean and preprocess raw data
-* Handle missing values
-* Detect and handle duplicates
-* Fix inconsistent data
-* Convert and validate data types
-* Work with strings and categorical data
-* Detect and investigate outliers
-* Transform and reshape datasets
-* Perform exploratory data analysis (EDA)
-* Extract useful information from data
-* Document the data preparation process
-
-The emphasis is on **understanding the reasoning behind each transformation**, not just applying Pandas functions.
+The projects demonstrate practical approaches to identifying data quality issues and preparing datasets for reliable analysis.
 
 ---
 
-##
+## Repository Structure
+
+```text
+data-cleaning/
+│
+├── README.md
+├── .gitignore
+│
+├── common/
+│
+├── learning/
+│   └── pandas/
+│
+└── projects/
+    ├── 01-cafe-sales/
+    ├── 02-ecommerce/
+    ├── 03-netflix/
+    ├── 04-online-food/
+    ├── 05-airbnb/
+    ├── 06-credit-risk/
+    ├── 07-exam/
+    └── 08-crm-sales-opportunities/
+```
 
 ---
 
-## 🧰 Tools & Technologies
+## Projects
 
-### Current
+| # | Project | Description |
+|---|---|---|
+| 01 | [Cafe Sales](projects/01-cafe-sales/) | Data cleaning and preparation of cafe sales data. |
+| 02 | [E-commerce](projects/02-ecommerce/) | Data cleaning and preparation of e-commerce data. |
+| 03 | [Netflix](projects/03-netflix/) | Cleaning and processing of Netflix content data. |
+| 04 | [Online Food](projects/04-online-food/) | Data cleaning and preparation of online food ordering data. |
+| 05 | [Airbnb](projects/05-airbnb/) | Cleaning and exploration of Airbnb listings data. |
+| 06 | [Credit Risk](projects/06-credit-risk/) | Data preparation and cleaning of customer credit risk data. |
+| 07 | [Exam Data](projects/07-exam/) | Cleaning and processing of student examination data. |
+| 08 | [CRM & Sales Opportunities](projects/08-crm-sales-opportunities/) | Data preparation and analysis of CRM and sales pipeline data. |
 
-* Python
-* Pandas
-* NumPy
-* Jupyter Notebook
-
-### Planned
-
-The repository will gradually expand toward tools and technologies commonly used in modern data workflows, including:
-
-* SQL
-* Data Visualization
-* Statistics
-* Data Validation
-* ETL / ELT concepts
-* Data Pipelines
-* dbt
-* Apache Airflow
-* Docker
-* Cloud Data Services
-
-These technologies will be added progressively through practical projects.
+Each project contains its own datasets, notebooks, and supporting files. Refer to the individual project directories for implementation details.
 
 ---
 
-## 🧹 Data Cleaning Workflow
+## Data Cleaning & Analysis Workflow
 
-The general workflow followed in this repository is:
+The projects generally involve the following stages:
 
 ```text
 Raw Dataset
-     │
-     ▼
-Understand the Data
-     │
-     ▼
-Inspect Data Quality
-     │
-     ▼
-Handle Missing Values
-     │
-     ▼
-Handle Duplicates
-     │
-     ▼
-Fix Data Types
-     │
-     ▼
-Standardize Values
-     │
-     ▼
-Handle Outliers
-     │
-     ▼
-Transform Data
-     │
-     ▼
-Validate the Result
-     │
-     ▼
-Clean Dataset
+     |
+     v
+Data Inspection
+     |
+     v
+Data Quality Assessment
+     |
+     v
+Missing Value Handling
+     |
+     v
+Duplicate Detection
+     |
+     v
+Data Type Correction
+     |
+     v
+Value Standardization
+     |
+     v
+Data Transformation
+     |
+     v
+Data Validation
+     |
+     v
+Cleaned Dataset
+     |
+     v
+Exploratory Data Analysis
 ```
 
-The exact workflow depends on the dataset and its business context.
+The specific workflow and cleaning decisions depend on each dataset's characteristics and context.
 
 ---
 
-## 📊 Datasets
+## Tools & Technologies
 
-This repository contains practical exercises and cleaning projects based on different types of datasets, including:
-
-* Cafe Sales
-* E-commerce
-* Netflix
-* Online Food
-* Airbnb
-* Credit Risk
-* Exam Data
-
-Each dataset is treated as a separate practical exercise with its own cleaning requirements.
+- **Python** – Data processing and analysis.
+- **Pandas** – Data manipulation and cleaning.
+- **NumPy** – Numerical operations.
+- **Jupyter Notebook** – Interactive analysis and documentation.
+- **Microsoft Excel** – Data inspection and validation.
+- **Git & GitHub** – Version control and project management.
 
 ---
 
-## 🔎 What I Practice
+## Learning Materials
 
-### Data Inspection
+The [`learning/pandas/`](learning/pandas/) directory contains supplementary Pandas exercises, notebooks, and datasets covering:
 
-```python
-df.head()
-df.tail()
-df.shape
-df.info()
-df.describe()
-df.columns
-df.dtypes
-```
-
-### Data Cleaning
-
-* Missing values
-* Duplicates
-* Incorrect data types
-* Inconsistent values
-* Invalid records
-* Formatting problems
-* String normalization
-
-### Data Transformation
-
-* Filtering
-* Sorting
-* Grouping
-* Aggregation
-* Merging
-* Joining
-* Concatenation
-* Reshaping
-* Feature creation
-
-### Data Analysis
-
-After cleaning the data, the next step is to explore it and answer questions such as:
-
-* What are the most common categories?
-* What trends exist?
-* Which groups perform better?
-* Are there unusual values?
-* What relationships exist between variables?
+- DataFrames and Series.
+- Data selection and filtering.
+- Missing values and duplicates.
+- Data type conversion.
+- String manipulation.
+- Grouping and aggregation.
+- Merging and joining.
+- Working with CSV, JSON, and Excel files.
 
 ---
 
-## 🚀 Future Direction
+## Project Documentation
 
-This repository is intentionally built to evolve.
+Project-specific documentation is maintained within individual project directories.
 
-The long-term direction is:
+Where applicable, project documentation covers:
 
-```text
-Python
-   │
-   ▼
-Pandas
-   │
-   ▼
-Data Cleaning
-   │
-   ▼
-Data Analysis
-   │
-   ▼
-SQL
-   │
-   ▼
-ETL / ELT
-   │
-   ▼
-Data Pipelines
-   │
-   ├── Airflow
-   ├── dbt
-   └── Docker
-   │
-   ▼
-Data Engineering
-   │
-   ▼
-Cloud Data Platforms
-```
-
-The goal is not to turn this repository into a collection of random notebooks.
-
-Instead, it will gradually become a **practical record of the process from raw data to reliable, usable data**.
+- **Objective:** The purpose and scope of the project.
+- **Dataset:** Source and description of the data.
+- **Data Quality Issues:** Identified inconsistencies and quality problems.
+- **Cleaning Process:** Applied transformations and preprocessing.
+- **Decisions:** Reasoning behind important data preparation choices.
+- **Results:** Output datasets and relevant findings.
 
 ---
 
-## 📌 Current Status
+## Repository Organization
 
-**Stage:** Data Cleaning & Pandas
-
-The repository is actively evolving. New datasets, techniques, analysis notebooks, and data engineering workflows will be added over time.
-
----
-
-## 🗺️ Roadmap
-
-* [x] Python fundamentals for data work
-* [x] Pandas fundamentals
-* [ ] Advanced Pandas
-* [ ] Data Cleaning patterns
-* [ ] Exploratory Data Analysis
-* [ ] Data Visualization
-* [ ] Statistics fundamentals
-* [ ] SQL
-* [ ] ETL / ELT
-* [ ] Data Validation
-* [ ] Data Pipelines
-* [ ] Airflow
-* [ ] dbt
-* [ ] Docker
-* [ ] Cloud Data Engineering
-* [ ] End-to-end Data Engineering Projects
+- `projects/` – Individual data cleaning and analysis projects.
+- `learning/pandas/` – Supplementary Pandas exercises and learning materials.
+- `common/` – Shared utilities and reusable functions used across projects.
 
 ---
 
-## 📚 Philosophy
+## Scope
 
-> **Don't just clean the data. Understand why it is dirty, what the problem means, and whether the transformation actually makes the data better.**
+This portfolio focuses on practical data preparation and analysis, with particular emphasis on:
 
-This repository is primarily a learning and experimentation workspace, with an emphasis on practical skills, reproducibility, and progressively better data workflows.
-
----
-
-## 👤 Author
-
-**Kirollos**
-
-Software Development → Data Engineering
-
-This repository represents my ongoing journey toward building practical skills in data analysis and data engineering.
+- Data quality assessment.
+- Missing data and duplicate handling.
+- Data standardization.
+- Data transformation.
+- Data validation.
+- Exploratory data analysis.
+- Preparing structured datasets for downstream analytical workflows.
